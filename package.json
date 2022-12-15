@@ -1,0 +1,30 @@
+{
+  "name": "javascript-test",
+  "version": "1.0.0",
+  "description": "우아한테크코스 프리코스 최종 코테 준비용 게임 미션",
+  "dependencies": {
+    "@woowacourse/mission-utils": "^1.0.6"
+  },
+  "devDependencies": {
+    "jest": "^29.0.3"
+  },
+  "scripts": {
+    "test": "jest --detectOpenHandles --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlawjd5/javascript-test.git"
+  },
+  "keywords": [],
+  "author": "woowacourse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rlawjd5/javascript-test/issues"
+  },
+  "homepage": "https://github.com/rlawjd5/javascript-test#readme",
+  "engineStrict": true,
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=14.0.0"
+  }
+}
