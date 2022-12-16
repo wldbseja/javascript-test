@@ -5,6 +5,10 @@ const { PRINT_STRING } = require('./constants');
  * 사용자에게 게임 진행 상황과 결과를 출력하는 역할을 한다.
  */
 const OutputView = {
+  printError(error) {
+    MissionUtils.Console.print(error.message);
+  },
+
   printGameStart() {
     MissionUtils.Console.print(PRINT_STRING.OUTPUT_GAME_START);
   },
