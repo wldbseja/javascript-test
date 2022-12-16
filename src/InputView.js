@@ -14,7 +14,9 @@ const InputView = {
   /**
    * 사용자가 추측할 숫자를 입력받는다.
    */
-  readGuessing() {},
+  readGuessing(callback) {
+    MissionUtils.Console.readLine(PRINT_STRING.INPUT_GUESS_NUMBER, callback);
+  },
 
   /**
    * 사용자가 게임을 다시 시도할지 종료할지 여부를 입력받는다.
