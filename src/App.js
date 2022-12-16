@@ -1,8 +1,10 @@
 const OutputView = require('./OutputView');
 const InputView = require('./InputView');
+const NumberGame = require('./NumberGame');
 const { PRINT_ERROR_STRING } = require('./constants');
 
 class App {
+  #NumberGame;
   constructor() {
     this.handleMaxValue = this.handleMaxValue.bind(this);
   }
@@ -10,6 +12,7 @@ class App {
   handleMaxValue(maxValue) {
     try {
       this.validateMaxValue(maxValue);
+      this.#NumberGame = new NumberGame(maxValue);
     } catch (error) {
       OutputView.printError(error);
       InputView.readMaxValue(this.handleMaxValue);

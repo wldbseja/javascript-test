@@ -1,10 +1,11 @@
-const AnswerMaker = require("./AnswerMaker");
-const RandomNumberGenerator = require("./RandomNumberGenerator");
+const AnswerMaker = require('./AnswerMaker');
+const RandomNumberGenerator = require('./RandomNumberGenerator');
 
 /**
  * 숫자 맞추기 게임을 관리하는 클래스
  */
 class NumberGame {
+  constructor(maxValue) {}
   /**
    * 사용자가 값을 추측할 때 사용하는 메서드
    * <p>
