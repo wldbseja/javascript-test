@@ -1,5 +1,5 @@
-const MissionUtils = require("@woowacourse/mission-utils");
-
+const MissionUtils = require('@woowacourse/mission-utils');
+const { PRINT_STRING } = require('./constants');
 /**
  * 사용자로부터 입력을 받는 역할을 한다.
  */
@@ -7,7 +7,9 @@ const InputView = {
   /**
    * 정답 숫자의 최대값을 입력받는다.
    */
-  readMaxValue() {},
+  readMaxValue(callback) {
+    MissionUtils.Console.readLine(PRINT_STRING.INPUT_MAX_VALUE, callback);
+  },
 
   /**
    * 사용자가 추측할 숫자를 입력받는다.
