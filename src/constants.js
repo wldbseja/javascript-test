@@ -4,4 +4,8 @@ const PRINT_STRING = {
   INPUT_GUESS_NUMBER: '추측한 숫자를 입력해주세요.',
 };
 
-module.exports = { PRINT_STRING };
+const PRINT_ERROR_STRING = {
+  ERROR_NUMBER_RANGE: '[ERROR] 최대 값은 10부터 1000사이의 숫자여야 합니다.',
+};
+
+module.exports = { PRINT_STRING, PRINT_ERROR_STRING };
