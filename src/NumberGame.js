@@ -5,9 +5,9 @@ const RandomNumberGenerator = require('./RandomNumberGenerator');
  * 숫자 맞추기 게임을 관리하는 클래스
  */
 class NumberGame {
-  #maxValue;
+  #number;
   constructor(maxValue) {
-    this.#maxValue = AnswerMaker.makeAnswer(
+    this.#number = AnswerMaker.makeAnswer(
       maxValue,
       RandomNumberGenerator.generate
     );
