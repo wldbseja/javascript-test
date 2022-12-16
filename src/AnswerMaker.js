@@ -7,7 +7,10 @@ const AnswerMaker = {
    * @param {function(): number} generateRandomNumber 무작위 값을 생성해주는 함수
    * @return {number} 1 ~ 최대값 사이의 정답 숫자
    */
-  makeAnswer(maxValue, generateRandomNumber) {},
+  makeAnswer(maxValue, generateRandomNumber) {
+    let randomNumber = (generateRandomNumber() % maxValue) + 1;
+    return randomNumber;
+  },
 };
 
 module.exports = AnswerMaker;
