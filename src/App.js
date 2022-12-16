@@ -21,7 +21,9 @@ class App {
     }
   }
 
-  handleGuessing(guessNumber) {}
+  handleGuessing(guessNumber) {
+    this.#NumberGame.guess(guessNumber);
+  }
 
   validateMaxValue(maxValue) {
     if (!(maxValue >= 10 && maxValue <= 1000)) {
